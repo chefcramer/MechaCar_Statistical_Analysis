@@ -17,3 +17,6 @@ Additionally, if we continue to assume the standard .05 significance level, the 
 
 The R-Squared Value is .71, which means that around 70% of the variability of the data can be explained using this linear regression model. As i have learned in this module, the closer to 1 a R-Squared value is, the better a model is at predicting data. The P-Value for the model is 5.35e-11 (a VERY small p-value) there is clearly some significant statistical relationships in this data.
 
+## Summary Statistics on Suspension Coils
+
+Using the 
