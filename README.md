@@ -19,4 +19,16 @@ The R-Squared Value is .71, which means that around 70% of the variability of th
 
 ## Summary Statistics on Suspension Coils
 
-Using the 
+We used the suspension coil csv file provided to determine if the manufactruring process was consistant across multiple production lots for suspension coils. We initially summarized the dataframe using the summarize() function. We extracted the mean, median, variance and standard deviation of the PSI column in the suspension coil data.
+
+![total_summary_code](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_2_3.PNG)
+![total_summary_results](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_2_3_2.PNG)
+
+We further refined this data to group the results by the lot number, using the group_by() and summarize() functions.
+
+![lot_summary_code](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_2_4.PNG)
+![lot_summary_results](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_2_4_2.PNG)
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. On the total summary table, the variance is 62.29. Over all lots of production, the variance is with in the 100 PSI tolerance range. 
+
+However if we look at the individual lots, there appears to be a problem with the lot 3 production run. Lot1 and lot2 have a variance of .9796 and 7.4694 respectively. These are both **well below** the 100PSI tolerance. Also, lots 1 and 2 have standard deviations of .9897 and 2.7330 respectively, both of which are quite low and refelcet a genearlly homogenious set of data. Lot3 however has a varaince of 170.2861, well above the 100PSI required and a standard deviation of 13.0493. This indicates that something went wrong in the manufacturing process and there is a wide range of numbers in this data set, with a predicted high number of outliers.
