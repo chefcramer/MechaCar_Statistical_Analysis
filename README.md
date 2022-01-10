@@ -3,7 +3,7 @@
 # Results
 ## Linear Regression to Predict MPG
 
-Using the provided MechaCar_mpg.csv file, linear regression was used to predict the Fuel Efficeiency of the 50 prototype cars. We used 5 different variables to examine the effect that they had on fuel efficenecy (MPG), The Vehicle Length, The Vehicle Weight, The Spoiler Angle, Drive Train (AWD), and Ground Clearance. 
+Using the provided MechaCar_mpg.csv file, linear regression was used to predict the Fuel Efficeiency of the 50 prototype cars. We used 5 different variables to examine the effect that they had on fuel efficenecy (MPG), The Vehicle Length, The Vehicle Weight, The Spoiler Angle, Ground Clearance, and Drive Train (AWD). 
 
 ![linear_regression](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_1_5.PNG)
 
