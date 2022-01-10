@@ -7,7 +7,7 @@ Using the provided MechaCar_mpg.csv file, linear regression was used to predict 
 
 ![linear_regression](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_1_5.PNG)
 
-Using the summary() function of this linear regression we determined the P-Value and the R-Squared Values.
+Using the summary() function of this linear regression we determined the P-Values and the R-Squared Values.
 
 ![summary_regression](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_1_6.PNG)
 
