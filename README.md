@@ -32,3 +32,23 @@ We further refined this data to group the results by the lot number, using the g
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. On the total summary table, the variance is 62.29. Over all lots of production, the variance is with in the 100 PSI tolerance range. 
 
 However if we look at the individual lots, there appears to be a problem with the lot 3 production run. Lot1 and lot2 have a variance of .9796 and 7.4694 respectively. These are both **well below** the 100PSI tolerance. Also, lots 1 and 2 have standard deviations of .9897 and 2.7330 respectively, both of which are quite low and refelcet a genearlly homogenious set of data. Lot3 however has a varaince of 170.2861, well above the 100PSI required and a standard deviation of 13.0493. This indicates that something likely went wrong in the manufacturing process and there is a wide range of numbers in this data set, with a predicted high number of outliers.
+
+
+## T-Tests on Suspension Coils
+
+![t-test_all](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_3_1.PNG)
+
+This t-test compairs all suspension coils to the mean population of 1500. The mean displayed here is **VERY** close to the mean population of 1500. If we continue to assume the signifigance value of .05, this tests P-Value is slightly higher at .0602. Howeve this IS over the .05 value, there for we cannot reject the null hypothesis. There is not a signifigant statistical difference between the mean population of 1500 and the sample mean across all manufactoring lots.
+
+![t-test_lot1](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_3_2.PNG)
+
+This t-test was specifcally on the suspension coils in manufacturing Lot 1. The mean is exactly 1500, so it matches the given population mean of 1500, so the p value is exactly 1. We can conclude that there is no evidence to reject the null hypothesis. There is not a statistcal difference between the population mean and the mean for lot 1.
+
+![t-test_lot2](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_3_3.PNG)
+
+This t-test was on the suspension coils in manufacturing Lot 2.The mean is 1500.2, again very similar to the given population mean of 1500. The p-value is .6072, which is higher than our assumed .05 signifigant value. We can conclude that there is no evidence to reject the null hypothesis. There is not a statistcal difference between the population mean and the mean for lot 2.
+
+![t-test_lot3](https://github.com/chefcramer/MechaCar_Statistical_Analysis/blob/main/Resources/deliv_3_4.PNG)
+
+This t-test was on the suspension coils in manufacturing Lot 3. The mean is 1496.14 similar to, but below the given mean of 1500. The P-Value is .04168, below our assumed .05 signifigant value. We can conclude that there **IS** evidence to reject our null hypotheses. There **IS** a statistical difference betweeen the population mean and the mean for lot 3. It seems like something farely significant went wrong with the Lot 3 production run, and the manufactoring logs need to be examined to determine what went wrong and where.
+
